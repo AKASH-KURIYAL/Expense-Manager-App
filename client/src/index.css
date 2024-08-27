@@ -1,0 +1,107 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+.titles{
+  background-color:blanchedalmond;
+}
+.content{
+  min-height:70vh;
+  margin-left:50px;
+  margin-right:50px;
+  margin-top:20px;
+  margin-bottom:10px;
+  border-radius:10px;
+  box-shadow:0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.register-page{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  height:90vh;
+}
+.reg-but{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.login-page{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  height:90vh;
+}
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin:10px 50px 10px 50px;
+}
+
+.filters > div {
+  display: flex;
+  align-items: center;
+}
+
+.filters h6 {
+  margin-right: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.filters .switch-icons {
+  display: flex;
+  align-items: center;
+}
+
+.filters .mx-2 {
+  margin-left: 8px;
+  margin-right: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #666;
+}
+
+.filters .active-icon {
+  color: #007bff;
+}
+
+.filters .inactive-icon {
+  color: #aaa;
+}
+
+.filters .btn {
+  font-size: 14px;
+  padding: 6px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filters .btn:hover {
+  background-color: #0056b3;
+}
+
+.anticon svg{
+  font-size:20px;
+  cursor:pointer;
+}
+.active-icon{
+  color:black;
+}
+.inactive-icon{
+  color:gray;
+}
+.switch-icons{
+  border: 1px solid rgba(0, 0, 0, 0.689);
+  border-radius:5px;
+  padding:10px 15px;
+}

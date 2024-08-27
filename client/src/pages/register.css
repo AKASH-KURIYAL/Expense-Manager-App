@@ -1,0 +1,73 @@
+/* General styles */
+.registry {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Container for the register page */
+  .register-page {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: center;
+  }
+  
+  /* Margin-bottom for the header */
+  .register-page h1 {
+    margin-bottom: 20px;
+  }
+  
+  /* Ant Design form labels */
+  .register-page .ant-form-item-label > label {
+    font-weight: bold;
+  }
+  
+  /* Input fields */
+  .register-page .ant-input {
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  /* Button and link container */
+  .register-page .reg-but {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  /* Button styling */
+  .register-page .btn {
+    width:100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .register-page .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Registration link */
+  .register-page .reg-but a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .register-page .reg-but a:hover {
+    text-decoration: underline;
+  }
+  
