@@ -64,7 +64,7 @@ const HomePage = () => {
       try {
         const user = JSON.parse(localStorage.getItem("user"));
         setLoading(true);
-        const res = await axios.post("/transactions/get-transaction", {
+        const res = await axios.post("/api/v1/transactions/get-transaction", {
           userid: user._id,
           frequency,
           selectedDate,
@@ -85,7 +85,7 @@ const HomePage = () => {
   const handleDelete = async(record) =>{
     try{
       setLoading(true);
-      await axios.post('/transactions/delete-transaction',{transactionId:record._id});
+      await axios.post('/api/v1/transactions/delete-transaction',{transactionId:record._id});
       setLoading(false);
       message.success("Transaction Deleted");
     }
@@ -100,7 +100,7 @@ const HomePage = () => {
       const user = JSON.parse(localStorage.getItem('user'))
       setLoading(true);
       if(editable){
-        await axios.post('/transactions/edit-transaction',{
+        await axios.post('/api/v1/transactions/edit-transaction',{
           payload:{
             ...values,
             userId : user._id
@@ -110,7 +110,7 @@ const HomePage = () => {
         message.success('Transaction updated Successfully');
       }
       else{
-        await axios.post('/transactions/add-transaction',{...values,userid:user._id});
+        await axios.post('/api/v1/transactions/add-transaction',{...values,userid:user._id});
         
         message.success('Transaction Added Successfully');
       }

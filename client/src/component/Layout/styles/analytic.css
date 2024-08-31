@@ -1,0 +1,86 @@
+/* Analytics component styles */
+.analytics-container {
+    margin: 20px;
+    display: flex; /* Make the container a flexbox container */
+    flex-wrap: wrap; /* Allow items to wrap if they exceed the width */
+    justify-content: space-between; /* Space out items evenly */
+  }
+  
+  /* Styles for rows */
+  .row {
+    display: flex; /* Use Flexbox for alignment */
+    flex-wrap: nowrap; /* Prevent items from wrapping to the next line */
+    justify-content: space-between; /* Space out items evenly */
+    width: 100%; /* Ensure row takes full width */
+  }
+  
+  /* Styles for columns */
+  .col-md-4 {
+    flex: 1; /* Each column takes equal space */
+    max-width: 22%; /* Limit the max width of each column to fit in one line */
+    margin: 10px; /* Margin for spacing between columns */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  
+  /* Styles for the card component */
+  .card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for the card header */
+  .card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 10px;
+  }
+  
+  /* Styles for the card body */
+  .card-body {
+    padding: 15px;
+  }
+  
+  /* Styles for headings in the card body */
+  .card-body h5 {
+    margin: 10px 0;
+  }
+  
+  /* Styles for progress circles */
+  .ant-progress-circle {
+    margin: 10px;
+  }
+  
+  /* Styles for income and expense text */
+  .card-body h5 {
+    margin: 0;
+  }
+  
+  .card-body h5[style*="color: green"] {
+    color: green;
+  }
+  
+  .card-body h5[style*="color: red"] {
+    color: red;
+  }
+  
+  /* Margin adjustments for category-wise sections */
+  .row-mt-3 {
+    margin-top: 30px;
+  }
+  
+  .d-flex {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent flex items from wrapping */
+    justify-content: space-between; /* Space out flex items */
+    width: 100%; /* Ensure the width is 100% */
+  }
+  
+  .mx-3 {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
